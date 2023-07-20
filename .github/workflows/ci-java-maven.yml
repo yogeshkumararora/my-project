@@ -28,6 +28,7 @@ jobs:
         mvn --batch-mode --update-snapshots package
         pwd
         ls
+        cd target
 
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
